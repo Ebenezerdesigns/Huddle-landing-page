@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    background-image: url(../images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    background-size: cover;
+}
+
+.logo img {
+    width: 15%;
+}
+
+img {
+    margin: 30px 30px 0px 30px;
+}
+
+.hero {
+    display: flex;
+}
+
+.community {
+    padding-top: 80px;
+    color: white;
+}
+
+.community h1 {
+    width: 70%;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.community p {
+    width: 90%;
+    margin-bottom: 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.register a {
+    background-color: white;
+    padding: 10px 50px;
+    text-decoration: none;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px black;
+}
+
+.icon {
+    position: absolute;
+    top: 90%;
+    left: 85%;
+}
+
+.icon i {
+    border: 1px solid white;
+    border-radius: 100px;
+    padding: 8px;
+    margin: 5px;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        max-width: 375px;
+        background-image: url(../images/bg-mobile.svg);
+    }
+    .hero {
+        flex-direction: column;
+    }
+    .community h1 {
+        width: 100%;
+        text-align: center;
+    }
+    .community p {
+        width: 82%;
+        margin: 0px auto;
+        text-align: center;
+    }
+    .logo img {
+        width: 25%;
+    }
+    .register {
+        margin: 40px 105px;
+    }
+    .icon {
+        display: flex;
+        position: absolute;
+        top: 110%;
+        left: 35%;
+        margin-bottom: 20px;
+    }
+}
